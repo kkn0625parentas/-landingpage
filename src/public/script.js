@@ -56,26 +56,27 @@ document.querySelectorAll('a.nav-link').forEach((anchor) => {
 });
 
 // Modal
-// const card = document.getElementById('cardAnggota');
-// const modal = document.getElementById('modalDetailAnggota');
-// const modalContent = document.getElementById('modalContent');
-// const btnClose = document.getElementById('btnCloseModal');
+const card = document.getElementById('btnDownloadLogo');
+const modal = document.getElementById('modalDownloadLogo');
+const modalContent = document.getElementById('modalContent');
+const btnClose = document.getElementById('btnCloseModal');
 
-// card.addEventListener('click', () => {
-//   modal.classList.remove('hidden');
-//   // Trigger animation in
-//   setTimeout(() => {
-//     modalContent.classList.remove('opacity-0', 'scale-95');
-//     modalContent.classList.add('opacity-100', 'scale-100');
-//   }, 10);
-// });
+card.addEventListener('click', () => {
+  modal.classList.remove('hidden');
+  // Trigger animation in
+  setTimeout(() => {
+    modalContent.classList.remove('opacity-0', 'scale-95');
+    modalContent.classList.add('opacity-100', 'scale-100');
+  }, 10);
+});
 
-// btnClose.addEventListener('click', () => {
-//   // Trigger animation out
-//   modalContent.classList.remove('opacity-100', 'scale-100');
-//   modalContent.classList.add('opacity-0', 'scale-95');
+btnClose.addEventListener('click', () => {
+  // Trigger animation out
+  modalContent.classList.remove('opacity-100', 'scale-100');
+  modalContent.classList.add('opacity-0', 'scale-95');
 
-//   setTimeout(() => {
-//     modal.classList.add('hidden');
-//   }, 300); // match duration-300
-// });
+  setTimeout(() => {
+    modal.classList.add('hidden');
+  }, 300); // match duration-300
+});
+
